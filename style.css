@@ -1,0 +1,461 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/) format('ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf) format('ttf');
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(9, 9, 9);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.aviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.aviso span {
+    color: red;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.aviso p {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.title-logo h1 {
+    font-size: 2.5rem;
+}
+
+.title-logo p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 10px 10px;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 8px #0FD300;
+
+}
+
+.bloco-principal {
+    background-image: url(./assets/Design-background.webp);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px;
+    background-size: 100% 100%;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+svg.e-fas-gamepad-one {
+    width: 5vw;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    fill: white;
+}
+
+.compra {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 13rem;
+    justify-content: center;
+
+}
+
+.compra-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.compra-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+
+}
+
+.promo {
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+.btn {
+    background-color: #0fd300;
+    padding: 20px 15px;
+    border-radius: 5px;
+    font-size: 3.2vw;
+}
+
+.btn-two {
+    background-color: #0fd300;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 2.5vw;
+    text-align: center;
+    width: 40%;
+}
+
+.btn-three {
+    background-color: #0fd300;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 2.5vw;
+
+    text-align: center;
+    width: 40%;
+}
+
+svg.e-fas-gamepad-two {
+    width: 1vw;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    fill: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+section.according {
+    width: 100%;
+    margin: 3% 10px;
+}
+
+details {
+    margin-bottom: 0.8rem;
+    font-weight: 400;
+}
+
+.title-accordion {
+    font-size: 3vw;
+    margin: 2rem 0;
+}
+
+summary {
+    font-size: 1.2rem;
+}
+
+.according-body {
+    border-bottom: 3px solid #ffffff;
+    width: 98%;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    gap: 20px;
+    transition: height 0.9s ease-in-out, padding 0.9s ease-in-out;
+    padding: 0 0;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+details[open]+.according-body {
+    padding: 0 1rem 1.5rem;
+    height: auto;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.card {
+    padding: 10px 0px;
+    width: 300px;
+    height: 200px;
+
+}
+
+.card h2 {
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #8f8f8f;
+}
+
+.depoimentos-container {
+    padding: 5% 0%;
+    text-align: center;
+}
+
+.title-dep {
+    color: red;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.subtitle-dep {
+    font-size: 39px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    margin: 0 auto;
+    cursor: grab;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 21rem;
+    height: 700px;
+    border-radius: 25px;
+}
+
+
+div.swiper-button-next::after,
+div.swiper-button-prev::after {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+div.swiper-button-next {
+    transform: translateX(10%);
+}
+
+div.swiper-button-prev {
+    transform: translateX(-10%);
+}
+
+
+.card2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 10px;
+}
+
+.image svg {
+    width: 50px;
+    fill: #7A7A7A;
+}
+
+.content h1 {
+    color: #009eff;
+    font-size: 4vw;
+}
+
+.content p {
+    font-size: 2vw;
+    padding: 0%;
+    margin: 15px 0px;
+    color: #7A7A7A;
+}
+
+
+.info-btn {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    color: red;
+}
+
+.info-btn p {
+    font-size: 3.2vw;
+}
+
+.info-btn span {
+    font-size: 3.5vw;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+
+}
+
+.interval-time {
+    font-size: 6vw;
+}
+
+#hours,
+#minutes,
+#seconds {
+    font-size: 6vw;
+}
+
+.time-block {
+    background-color: #690000;
+    color: white;
+    width: 30%;
+    /* largura fixa */
+
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.time-block span {
+    display: block;
+    font-size: 2em;
+}
+
+.label {
+    font-size: 1em;
+}
+
+@media screen and (min-width:500px) {
+
+    .m-pag img {
+        width: 70vw;
+    }
+
+    .compra {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px 0rem;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .compra-two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .compra-three {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+
+    }
+
+    .promo {
+        font-weight: 700;
+        font-size: 5vw;
+    }
+
+    .btn {
+        background-color: #0fd300;
+        padding: 20px 15px;
+        border-radius: 5px;
+        font-size: 3.2vw;
+        width: 80%;
+    }
+
+    .btn-two {
+        background-color: #0fd300;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-size: 3.5vw;
+        text-align: center;
+        width: 60%;
+    }
+
+    .btn-three {
+        background-color: #0fd300;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 3.5vw;
+
+        text-align: center;
+        width: 60%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0px 0px;
+        text-align: center;
+    }
+
+
+    .card2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 25%;
+        gap: 10px;
+    }
+
+    .image svg {
+        width: 50px;
+        fill: #7A7A7A;
+    }
+
+    .content h1 {
+        color: #009eff;
+        font-size: 4vw;
+    }
+
+    .content p {
+        font-size: 2.5vw;
+        margin: 15px 0px;
+        color: #7A7A7A;
+    }
+}
