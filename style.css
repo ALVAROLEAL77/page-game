@@ -509,6 +509,19 @@ span.promo-buy {
 @media (max-width:500px) {
 
 
+    .aviso {
+        padding: 0px;
+    }
+    
+    .aviso span {
+
+        font-size: 15px;
+    }
+    
+    .aviso p {
+        font-size: 15px;
+    }
+
     .title-logo p {
         font-size: 21px;
     }
