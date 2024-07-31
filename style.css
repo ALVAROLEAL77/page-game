@@ -34,20 +34,20 @@ body {
 .aviso span {
     color: red;
     font-weight: 400;
-    font-size: 4vw;
+    font-size: 24px;
 }
 
 .aviso p {
     font-weight: 400;
-    font-size: 4vw;
+    font-size: 24px;
 }
 
 .title-logo h1 {
-    font-size: 2.5rem;
+    font-size: 42px;
 }
 
 .title-logo p {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 600;
     padding: 10px 10px;
     margin-bottom: 2rem;
@@ -82,7 +82,8 @@ svg.e-fas-gamepad-one {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 30px 13rem;
+    padding: 30px 0rem;
+    align-items: center;
     justify-content: center;
 
 }
@@ -104,33 +105,111 @@ svg.e-fas-gamepad-one {
 
 .promo {
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 42px;
+}
+
+.promo del {
+    color: #ff0000;
+}
+
+.promo span {
+    color: #0fd300;
+    text-decoration: underline;
 }
 
 .btn {
     background-color: #0fd300;
-    padding: 20px 15px;
+    padding: 20px 10px;
     border-radius: 5px;
-    font-size: 3.2vw;
+    font-size: 36px;
+    width: 60%;
 }
 
 .btn-two {
     background-color: #0fd300;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 5px;
-    font-size: 2.5vw;
+    font-size: 28px;
+    font-weight: 700;
     text-align: center;
     width: 40%;
 }
 
+.pulse {
+    animation: pulse 0.8s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 0px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.pulse02 {
+    animation: pulse 2.5s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 0px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 .btn-three {
     background-color: #0fd300;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 5px;
-    font-size: 2.5vw;
-
+    font-size: 28px;
+    font-weight: 700;
     text-align: center;
     width: 40%;
+}
+
+.m-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 svg.e-fas-gamepad-two {
@@ -205,13 +284,14 @@ details[open]+.according-body {
 }
 
 .card h2 {
-    font-size: 25px;
+    font-size: 28px;
     padding: 10px 0px;
+    font-weight: 600;
 }
 
 .card p {
-    font-size: 15px;
-    color: #8f8f8f;
+    font-size: 16px;
+    color: #B4B4B4;
 }
 
 .depoimentos-container {
@@ -221,20 +301,20 @@ details[open]+.according-body {
 
 .title-dep {
     color: red;
-    font-size: 35px;
+    font-size: 38px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
 .subtitle-dep {
-    font-size: 39px;
-    font-weight: 500;
+    font-size: 41px;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 
 .swiper-container {
     width: 100%;
-    padding: 50px;
+    padding: 0px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -253,7 +333,7 @@ details[open]+.according-body {
 }
 
 .swiper-slide img {
-    width: 21rem;
+    width: 23rem;
     height: 700px;
     border-radius: 25px;
 }
@@ -261,18 +341,18 @@ details[open]+.according-body {
 
 div.swiper-button-next::after,
 div.swiper-button-prev::after {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: #ffffff;
 }
 
 
 div.swiper-button-next {
-    transform: translateX(10%);
+    transform: translateX(60%);
 }
 
 div.swiper-button-prev {
-    transform: translateX(-10%);
+    transform: translateX(-60%);
 }
 
 
@@ -293,11 +373,11 @@ div.swiper-button-prev {
 
 .content h1 {
     color: #009eff;
-    font-size: 4vw;
+    font-size: 28px;
 }
 
 .content p {
-    font-size: 2vw;
+    font-size: 16px;
     padding: 0%;
     margin: 15px 0px;
     color: #7A7A7A;
@@ -315,11 +395,11 @@ div.swiper-button-prev {
 }
 
 .info-btn p {
-    font-size: 3.2vw;
+    font-size: 36px;
 }
 
 .info-btn span {
-    font-size: 3.5vw;
+    font-size: 40px;
 }
 
 .countdown {
@@ -333,13 +413,13 @@ div.swiper-button-prev {
 }
 
 .interval-time {
-    font-size: 6vw;
+    font-size: 50px;
 }
 
 #hours,
 #minutes,
 #seconds {
-    font-size: 6vw;
+    font-size: 100px;
 }
 
 .time-block {
@@ -365,120 +445,200 @@ div.swiper-button-prev {
     font-size: 1em;
 }
 
-@media (max-width:500px) {
+.promo-two {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+span.animation {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+span.promo-buy {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+@media (max-width:1093px) {
+    .swiper-slide img {
+        width: 28rem;
+        height: 700px;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width:768px) {
 
 
     .logo img {
         width: 200px;
     }
 
-    .title-logo h1 {
-        font-size: 2rem;
-    }
-    
-    .title-logo p {
-        font-size: 1.8rem;
-        font-weight: 600;
-        padding: 0px 0px;
- 
-    
-    }
-
-    .m-pag img {
-        width: 50vw;
-    }
-
-    .compra {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 30px 0rem;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .compra-two {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-    }
-
-    .compra-three {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 0;
-    }
-
-    .promo {
-        font-weight: 700;
-        font-size: 5vw;
-    }
-
     .btn {
-        background-color: #0fd300;
-        padding: 20px 15px;
-        border-radius: 5px;
-        font-size: 3.2vw;
-        width: 80%;
+        font-size: 33px;
+        width: 85%;
     }
 
     .btn-two {
-       
-        padding: 10px 10px;
-        border-radius: 5px;
-        font-size: 3.5vw;
-        text-align: center;
-        width: 60%;
+        font-size: 24px;
+        width: 50%;
     }
 
     .btn-three {
+        font-size: 24px;
+        width: 50%;
+    }
 
-        padding: 10px 15px;
-        border-radius: 5px;
-        font-size: 3.5vw;
-        text-align: center;
-        width: 60%;
-        margin-bottom: 20px;
+    .cards {
+        display: flex;
+        gap: 5%;
+        padding: 0px 0px;
+    }
+
+    .card {
+        padding: 10px 0px;
+        width: 200px;
+        height: 300px;
+
+    }
+
+}
+
+@media (max-width:500px) {
+
+
+    .title-logo p {
+        font-size: 21px;
+    }
+
+    .bloco-principal {
+        padding: 0px 0px;
+    }
+
+    .promo {
+        font-size: 32px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .btn {
+        font-size: 19px;
+        width: 85%;
+        padding: 10px 10px;
+        border-radius: 11px;
+    }
+
+    .btn-two {
+        font-size: 18px;
+        width: 90%;
+        border-radius: 11px;
+
+    }
+
+    .btn-three {
+        font-size: 18px;
+        width: 90%;
+        border-radius: 11px;
     }
 
     .cards {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+        gap: 1%;
         padding: 0px 0px;
+    }
+
+    .card {
+        padding: 10px 0px;
+        width: 90%;
+        height: 200px;
+
+    }
+
+    .m-pag img {
+        width: 90%;
+    }
+
+    .title-dep {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .subtitle-dep {
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+
+
+    .swiper-slide img {
+        width: 18rem;
+        height: 700px;
+        border-radius: 25px;
+    }
+
+    div.swiper-button-next {
+        transform: translateX(40%);
+    }
+
+    div.swiper-button-prev {
+        transform: translateX(-40%);
+    }
+
+    .info-btn p {
+        font-size: 22px;
+    }
+
+    .info-btn span {
+        font-size: 24px;
+    }
+
+    .countdown {
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+    .time-block {
+        background-color: #690000;
+        color: white;
+        width:25%;
+        /* largura fixa */
+    
+    }
+    
+
+
+    .interval-time {
+        font-size: 7vw;
+    }
+
+    #hours,
+    #minutes,
+    #seconds {
+        font-size: 15vw;
+    }
+    .label {
+        font-size: 3vw;
+    }
+    
+
+    .promo-two {
         text-align: center;
+        font-size: 23px;
+        font-weight: 400;
     }
 
-
-    .card2 {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 25%;
-        gap: 10px;
+    span.animation {
+        font-weight: 700;
+        font-size: 40px;
     }
 
-    .image svg {
-        width: 50px;
-        fill: #7A7A7A;
-    }
-
-    .content h1 {
-        color: #009eff;
-        font-size: 4vw;
-    }
-
-    .content p {
-        font-size: 2.5vw;
-        margin: 15px 0px;
-        color: #7A7A7A;
+    span.promo-buy {
+        font-weight: 700;
+        font-size: 60px;
     }
 }
