@@ -590,6 +590,19 @@ span.promo-buy {
         transform: translateX(-40%);
     }
 
+   
+    
+    .content h1 {
+        font-size: 24px;
+    }
+    
+    .content p {
+        font-size: 16px;
+        padding: 0%;
+        margin: 0px 0px;
+    }
+    
+
     .info-btn p {
         font-size: 22px;
     }
@@ -603,8 +616,6 @@ span.promo-buy {
         margin-bottom: 15px;
     }
     .time-block {
-        background-color: #690000;
-        color: white;
         width:25%;
         /* largura fixa */
     
