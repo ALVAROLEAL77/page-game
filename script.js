@@ -63,3 +63,78 @@ function startCountdown(duration) {
     }, 1000);
 }
 
+let prefix = ["https://checkout.pepper.com.br"];
+     
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}();
+console.log('%cScript de rastreamento de vendas desenvolvido pela Comunidade NOD - Dericson Calari e Samuel Choairy', 'font-size:20px;color:yellow;');
+
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            p = r.searchParams.get("fbclid"),
+            c = r.searchParams.get("utm_content");
+        -1 !== e.indexOf("?") && (t = `&src=${a}|${n}|${o}|${m}|${c}`);
+        console.log(t);
+    }
+    return t;
+}
+
+function getCookie(name) {
+    let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    if (match) {
+        return match[2];
+    }
+    return null;
+}
+
+function updateLinks() {
+    var t = new URLSearchParams(window.location.search);
+    var sck = getCookie("Leadsf");
+
+    if (sck) {
+        t.append("sck", sck);
+
+        t.toString() && document.querySelectorAll("a").forEach(function(e) {
+            for (let r = 0; r < prefix.length; r++) {
+                if (-1 !== e.href.indexOf(prefix[r])) {
+                    if (-1 === e.href.indexOf("?")) {
+                        e.href += "?" + t.toString() + getParams();
+                    } else {
+                        e.href += "&" + t.toString() + getParams();
+                    }
+                }
+            }
+        });
+    } else {
+        // Tenta novamente após 100ms se o cookie ainda não estiver presente
+        setTimeout(updateLinks, 100);
+    }
+}
+
+window.addEventListener('load', function() {
+    updateLinks();
+});
