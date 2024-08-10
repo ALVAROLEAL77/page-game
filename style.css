@@ -50,14 +50,14 @@ body {
 }
 
 .bloco-principal {
-    background-image: url(./assets/Design-background.webp);
+    background-image: url(./assets/images/computador.webp);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     padding: 0px 20px;
-    background-size: 100% 100%;
+    background-size: cover;
     text-align: center;
-    overflow: hidden;
+    
 
 }
 
@@ -464,10 +464,23 @@ span.promo-buy {
 
 @media (max-width:768px) {
 
+    .bloco-principal {
+        background-image: url(./assets/images/celular.webp);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        padding: 0px 20px;
+        background-size: cover;
+        text-align: center;
+        
+    
+    }
 
     .logo img {
         width: 200px;
     }
+
+    
 
     .btn {
         font-size: 33px;
