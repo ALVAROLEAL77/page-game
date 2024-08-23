@@ -353,6 +353,12 @@ div.swiper-button-prev {
     transform: translateX(-60%)
 }
 
+
+#bloco-cards2 {
+    background-color: white;
+    color: black;
+}
+
 .card2 {
     text-align: center;
     flex-direction: column;
