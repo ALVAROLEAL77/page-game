@@ -4,13 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <link rel="preload" href="./assets/images/computador.webp">
     <link fetchpriority="high" rel="preload" href="./assets/images/celular.webp">
 
+    <script src="https://trackings.nemu.com.br/trackings/script.js" async data-tracking-id="pjqB15GDM3"
+        crossorigin="anonymous"></script>
+    <script src="https://trackings.nemu.com.br/trackings/iOjq4LRbII/script.js" async crossorigin="anonymous"></script>
     <title>MEGA STORE</title>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://api.retrox-game.shop/lexpumti.js?st=' + i + dl + ''; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'N72NQK3B');</script>
+    <!-- End Google Tag Manager -->
+
+    <script async>
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault();
+        });
+    </script>
+
+
+
 </head>
 
 <body onload="loading()">
@@ -154,6 +173,36 @@
                     a qualquer momento.
                 </p>
             </div>
+
+            <!-- 
+            <script async>
+                !function (f, b, e, v, n, t, s) {
+                    if (f.fbq) return; n = f.fbq = function () {
+                        n.callMethod ?
+                            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                    n.queue = []; t = b.createElement(e); t.async = !0;
+                    t.src = v; s = b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s)
+                }(window, document, 'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+
+                fbq('init', '3136086549861739');
+                fbq('track', 'PageView');
+
+                (function () {
+                    var currentDomain = window.location.hostname;
+                    var allowedDomain = 'retrox-game.shop';
+
+                    if (currentDomain !== allowedDomain) {
+
+                        window.location.href = 'https://retrox-game.shop/VAI-COPIAR-A-MAE-SEU-SEM-PAI-VAGABUNDO';
+                    }
+                })();
+            </script>
+            <noscript><img height="1" width="1" style="display:none"
+                    src="https://www.facebook.com/tr?id=3136086549861739&ev=PageView&noscript=1" /></noscript> -->
 
 
         </section>
@@ -337,6 +386,83 @@
         </section>
         <script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script async src="./script.js"></script>
+        <script>
+            let prefix = ["https://checkout.pepper.com.br"];
+
+            function getParams() {
+                let t = "",
+                    e = window.top.location.href,
+                    r = new URL(e);
+                if (null != r) {
+                    let a = r.searchParams.get("utm_source"),
+                        n = r.searchParams.get("utm_medium"),
+                        o = r.searchParams.get("utm_campaign"),
+                        m = r.searchParams.get("utm_term"),
+                        c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+                }
+                return t
+            } ! function () {
+                var t = new URLSearchParams(window.location.search);
+                t.toString() && document.querySelectorAll("a").forEach(function (e) {
+                    for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+                })
+            }();
+            console.log('%cScript de rastreamento de vendas desenvolvido pela Comunidade NOD - Dericson Calari e Samuel Choairy', 'font-size:20px;color:yellow;');
+        </script>
+        <script>
+            function getParams() {
+                let t = "",
+                    e = window.top.location.href,
+                    r = new URL(e);
+                if (null != r) {
+                    let a = r.searchParams.get("utm_source"),
+                        n = r.searchParams.get("utm_medium"),
+                        o = r.searchParams.get("utm_campaign"),
+                        m = r.searchParams.get("utm_term"),
+                        p = r.searchParams.get("fbclid"),
+                        c = r.searchParams.get("utm_content");
+                    -1 !== e.indexOf("?") && (t = `&src=${a}|${n}|${o}|${m}|${c}`);
+                    console.log(t);
+                }
+                return t;
+            }
+
+            function getCookie(name) {
+                let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+                if (match) {
+                    return match[2];
+                }
+                return null;
+            }
+
+            function updateLinks() {
+                var t = new URLSearchParams(window.location.search);
+                var sck = getCookie("Leadsf");
+
+                if (sck) {
+                    t.append("sck", sck);
+
+                    t.toString() && document.querySelectorAll("a").forEach(function (e) {
+                        for (let r = 0; r < prefix.length; r++) {
+                            if (-1 !== e.href.indexOf(prefix[r])) {
+                                if (-1 === e.href.indexOf("?")) {
+                                    e.href += "?" + t.toString() + getParams();
+                                } else {
+                                    e.href += "&" + t.toString() + getParams();
+                                }
+                            }
+                        }
+                    });
+                } else {
+                    // Tenta novamente após 100ms se o cookie ainda não estiver presente
+                    setTimeout(updateLinks, 100);
+                }
+            }
+
+            window.addEventListener('load', function () {
+                updateLinks();
+            });
+        </script>
     </div>
 </body>
 
