@@ -1,9 +1,9 @@
 
-const countdownDuration = 1800; // 1 hora
+const countdownDuration = 1800;
 startCountdown(countdownDuration);
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
+
     direction: 'horizontal',
     slidesPerView: 3,
     spaceBetween: 0,
@@ -13,13 +13,13 @@ const swiper = new Swiper('.swiper', {
         disableOnInteraction: false,
     },
   
-    // If we need pagination
+
     pagination: {
       el: '.swiper-pagination',
       clickable:true,
     },
   
-    // Navigation arrows
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -41,6 +41,29 @@ const swiper = new Swiper('.swiper', {
         },
     },
   });
+
+function startCountdown(duration) {
+    let timer = duration, hours, minutes, seconds;
+    const hoursElem = document.getElementById('hours');
+    const minutesElem = document.getElementById('minutes');
+    const secondsElem = document.getElementById('seconds');
+
+    setInterval(() => {
+        hours = Math.floor(timer / 3600);
+        minutes = Math.floor((timer % 3600) / 60);
+        seconds = Math.floor(timer % 60);
+
+        hoursElem.textContent = hours < 10 ? "0" + hours : hours;
+        minutesElem.textContent = minutes < 10 ? "0" + minutes : minutes;
+        secondsElem.textContent = seconds < 10 ? "0" + seconds : seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+
 
   function loading(){
     document.getElementsByClassName('box-load')[0].style.display = "none";

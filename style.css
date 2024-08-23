@@ -1,83 +1,74 @@
+.aviso p,
+.aviso span {
+    font-weight: 400;
+    font-size: 24px
+}
+
+a,
+body {
+    color: #fff
+}
+
+.info-btn,
+.promo del,
+.promo-two del,
+.title-dep {
+    color: red
+}
+
 @font-face {
     font-family: Montserrat;
     src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('ttf');
-    font-display: swap;
+    font-display: swap
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
-    background-color: rgb(9, 9, 9);
-    color: white;
-    font-family: "Montserrat", sans-serif;
-   width: 100%;
-   height: 100%;
+    background-color: #090909;
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden
 }
-@keyframes load {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.pre {
-    width: 80px;
-    height: 80px;
-    background-image: url("./assets/images/logo.webp");
-    background-position: center;
-    background-size: contain;
-    animation: load 2s infinite linear;
-}
-.box-load{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-.content{display: none;
-}
-.content p{
-    color: #ffffff;
-}
-
-
 
 .aviso {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    text-align: center;
+    text-align: center
 }
 
 .aviso span {
-    color: red;
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.aviso p {
-    font-weight: 400;
-    font-size: 24px;
+    color: red
 }
 
 .title-logo h1 {
-    font-size: 42px;
+    font-size: 42px
 }
 
 .title-logo p {
     font-size: 40px;
     font-weight: 600;
-    padding: 10px 10px;
+    padding: 10px;
     margin-bottom: 2rem;
-    text-shadow: 0px 0px 8px #0FD300;
+    text-shadow: 0 0 8px #0fd300
+}
 
+.promo,
+.promo-two del {
+    font-weight: 700;
+    font-size: 42px
+}
+
+svg.e-fas-gamepad-one,
+svg.e-fas-gamepad-two {
+    vertical-align: middle;
+    margin-bottom: 5px;
+    fill: white
 }
 
 .bloco-principal {
@@ -85,66 +76,80 @@ body {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    padding: 0px 20px;
+    padding: 0 20px;
     background-size: cover;
-    text-align: center;
-    
-
+    text-align: center
 }
 
 .logo img {
-    width: 300px;
+    width: 300px
 }
 
 svg.e-fas-gamepad-one {
-    width: 5vw;
-    vertical-align: middle;
-    margin-bottom: 5px;
-    fill: white;
+    width: 5vw
+}
+
+#vid_66c27617c57c83000b281720 {
+    position: relative;
+    width: 100%;
+    padding: 56.25% 0 0;
+}
+
+#thumb_66c27617c57c83000b281720 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#backdrop_66c27617c57c83000b281720 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.elementor-element:has(#smartplayer) {
+    width: 100%;
 }
 
 .compra {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 30px 0rem;
+    padding: 30px 0;
     align-items: center;
-    justify-content: center;
-
+    justify-content: center
 }
 
-.compra-two {
+.compra-two,
+.swiper-slide {
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    align-items: center
 }
 
 .compra-three {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0;
-
+    margin: 30px 0
 }
 
-.promo {
-    font-weight: 700;
-    font-size: 42px;
-}
-
-.promo del {
-    color: #ff0000;
-}
-.promo-two del {
-    color: #ff0000;
-    font-weight: 700;
-    font-size: 42px;
+.pulse,
+.pulse02 {
+    margin: 0 auto;
+    display: table
 }
 
 .promo span {
     color: #0fd300;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .btn {
@@ -152,32 +157,36 @@ svg.e-fas-gamepad-one {
     padding: 20px 10px;
     border-radius: 5px;
     font-size: 36px;
-    width: 60%;
+    width: 60%
+}
+
+.btn-three,
+.btn-two {
+    background-color: #0fd300;
+    border-radius: 5px;
+    width: 40%;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center
 }
 
 .btn-two {
-    background-color: #0fd300;
-    padding: 10px 10px;
-    border-radius: 5px;
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-    width: 40%;
+    padding: 10px
 }
 
 .pulse {
-    animation: pulse 0.8s infinite;
-    margin: 0 auto;
-    display: table;
-    margin-top: 0px;
-    animation-direction: alternate;
+    animation: .8s infinite alternate pulse;
     -webkit-animation-name: pulse;
-    animation-name: pulse;
+}
+
+.pulse02 {
+    animation: 2.5s infinite alternate pulse;
+    -webkit-animation-name: pulse;
 }
 
 @-webkit-keyframes pulse {
     0% {
-        -webkit-transform: scale(1);
+        -webkit-transform: scale(1)
     }
 
     100% {
@@ -187,512 +196,429 @@ svg.e-fas-gamepad-one {
 
 @keyframes pulse {
     0% {
-        transform: scale(1);
+        transform: scale(1)
     }
 
     100% {
-        transform: scale(1.1);
-    }
-}
-
-.pulse02 {
-    animation: pulse 2.5s infinite;
-    margin: 0 auto;
-    display: table;
-    margin-top: 0px;
-    animation-direction: alternate;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(1);
-    }
-
-    100% {
-        -webkit-transform: scale(1.1);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(1.1);
+        transform: scale(1.1)
     }
 }
 
 .btn-three {
-    background-color: #0fd300;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-    width: 40%;
+    padding: 10px 15px
+}
+
+.according-body,
+.cards {
+    display: flex;
+    padding: 0
 }
 
 .m-pag {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%
 }
 
 svg.e-fas-gamepad-two {
-    width: 1vw;
-    vertical-align: middle;
-    margin-bottom: 5px;
-    fill: white;
+    width: 1vw
 }
 
 a {
     text-decoration: none;
-    color: white;
     font-weight: 700;
-    text-align: center;
+    text-align: center
 }
 
-
 section.according {
-    margin: 3% 10px;
+    margin: 3% 10px
 }
 
 details {
-    margin-bottom: 0.8rem;
-    font-weight: 400;
+    margin-bottom: .8rem;
+    font-weight: 400
 }
 
 .title-accordion {
     font-size: 3vw;
-    margin: 2rem 0;
+    margin: 2rem 0
 }
 
 summary {
-    font-size: 1.2rem;
+    font-size: 1.2rem
 }
 
 .according-body {
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 3px solid #fff;
     width: 98%;
-    font-size: 0.9rem;
-    display: flex;
+    font-size: .9rem;
     flex-direction: column;
     align-items: left;
     justify-content: left;
     gap: 20px;
-    transition: height 0.9s ease-in-out, padding 0.9s ease-in-out;
-    padding: 0 0;
+    transition: height .9s ease-in-out, padding .9s ease-in-out;
     height: 0;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem
 }
 
 details[open]+.according-body {
     padding: 0 1rem 1.5rem;
-    height: auto;
+    height: auto
 }
 
 .cards {
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 0px 0px;
-    text-align: center;
+    text-align: center
+}
+
+.card2,
+.countdown {
+    gap: 10px;
+    display: flex
+}
+
+.card,
+.card h2 {
+    padding: 10px 0
 }
 
 .card {
-    padding: 10px 0px;
     width: 300px;
-    height: 200px;
-
+    height: 200px
 }
 
 .card h2 {
     font-size: 28px;
-    padding: 10px 0px;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .card p {
     font-size: 16px;
-    color: #B4B4B4;
+    color: #b4b4b4
 }
 
 .depoimentos-container {
-    padding: 5% 0%;
-    text-align: center;
+    padding: 5% 0;
+    text-align: center
 }
 
 .title-dep {
-    color: red;
     font-size: 38px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .subtitle-dep {
     font-size: 41px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .swiper-container {
     width: 100%;
-    padding: 0px;
+    padding: 0;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .swiper {
     margin: 0 auto;
-    cursor: grab;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    cursor: grab
 }
 
 .swiper-slide img {
     width: 23rem;
     height: 700px;
-    border-radius: 25px;
+    border-radius: 25px
 }
-
 
 div.swiper-button-next::after,
 div.swiper-button-prev::after {
     font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
+    font-weight: 700;
+    color: #fff
 }
 
-
 div.swiper-button-next {
-    transform: translateX(60%);
+    transform: translateX(60%)
 }
 
 div.swiper-button-prev {
-    transform: translateX(-60%);
+    transform: translateX(-60%)
 }
-
 
 .card2 {
     text-align: center;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 0px;
-    gap: 10px;
+    padding: 30px 0
 }
 
 .image svg {
     width: 50px;
-    fill: #7A7A7A;
+    fill: #7A7A7A
 }
 
 .content h1 {
     color: #009eff;
-    font-size: 28px;
+    font-size: 28px
 }
 
 .content p {
     font-size: 16px;
-    padding: 0%;
-    margin: 15px 0px;
-    color: #7A7A7A;
+    padding: 0;
+    margin: 15px 0;
+    color: #7a7a7a
 }
 
-
 .info-btn {
-    padding: 20px 0px;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-weight: 700;
-    color: red;
+    font-weight: 700
 }
 
 .info-btn p {
-    font-size: 36px;
+    font-size: 36px
 }
 
 .info-btn span {
-    font-size: 40px;
+    font-size: 40px
 }
 
 .countdown {
-    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     font-family: Arial, sans-serif;
-    margin-bottom: 15px;
-
+    margin-bottom: 15px
 }
 
 .interval-time {
-    font-size: 50px;
+    font-size: 50px
 }
 
 #hours,
 #minutes,
 #seconds {
-    font-size: 100px;
+    font-size: 100px
 }
 
 .time-block {
     background-color: #690000;
-    color: white;
+    color: #fff;
     width: 30%;
-    /* largura fixa */
-
     padding: 10px;
     text-align: center;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center
 }
 
 .time-block span {
     display: block;
-    font-size: 2em;
+    font-size: 2em
 }
 
 .label {
-    font-size: 1em;
+    font-size: 1em
 }
 
 .promo-two {
     text-align: center;
     font-size: 38px;
-    font-weight: 400;
+    font-weight: 400
 }
 
 span.animation {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 50px
 }
 
 span.promo-buy {
     font-weight: 700;
-    font-size: 70px;
+    font-size: 70px
 }
 
 @media (max-width:1093px) {
     .swiper-slide img {
         width: 28rem;
         height: 700px;
-        border-radius: 25px;
+        border-radius: 25px
     }
 }
 
 @media (max-width:768px) {
-
     .logo img {
-        width: 200px;
+        width: 200px
     }
-
-    
 
     .btn {
         font-size: 33px;
-        width: 85%;
+        width: 85%
     }
 
+    .btn-three,
     .btn-two {
         font-size: 24px;
-        width: 50%;
-    }
-
-    .btn-three {
-        font-size: 24px;
-        width: 50%;
+        width: 50%
     }
 
     .cards {
         display: flex;
         gap: 5%;
-        padding: 0px 0px;
+        padding: 0
     }
 
     .card {
-        padding: 10px 0px;
+        padding: 10px 0;
         width: 200px;
-        height: 300px;
-
+        height: 300px
     }
-
 }
 
 @media (max-width:500px) {
-
-
     .aviso {
-        padding: 10px;
+        padding: 10px
     }
-    
-    .aviso span {
 
-        font-size: 15px;
-    }
-    
-    .aviso p {
-        font-size: 15px;
+    .aviso p,
+    .aviso span {
+        font-size: 15px
     }
 
     .title-logo p {
-        font-size: 21px;
+        font-size: 21px
     }
 
     .bloco-principal {
-        padding: 0px 0px;
+        padding: 0
     }
 
     .promo {
-        font-size: 32px;
+        font-size: 32px
     }
 
     .logo img {
-        width: 150px;
+        width: 150px
     }
 
     .btn {
         font-size: 19px;
         width: 85%;
-        padding: 10px 10px;
-        border-radius: 11px;
+        padding: 10px;
+        border-radius: 11px
     }
 
+    .card,
+    .m-pag img {
+        width: 90%
+    }
+
+    .btn-three,
     .btn-two {
         font-size: 18px;
         width: 90%;
-        border-radius: 11px;
-
-    }
-
-    .btn-three {
-        font-size: 18px;
-        width: 90%;
-        border-radius: 11px;
+        border-radius: 11px
     }
 
     .cards {
         display: flex;
         flex-direction: column;
         gap: 1%;
-        padding: 0px 0px;
+        padding: 0
     }
 
     .card {
-        padding: 10px 0px;
-        width: 90%;
-        height: 200px;
-
-    }
-
-    .m-pag img {
-        width: 90%;
+        padding: 10px 0;
+        height: 200px
     }
 
     .title-dep {
         font-size: 34px;
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 
     .subtitle-dep {
         font-size: 19px;
         font-weight: 400;
-        margin-bottom: 20px;
+        margin-bottom: 20px
     }
-
-
 
     .swiper-slide img {
         width: 18rem;
         height: 700px;
-        border-radius: 25px;
+        border-radius: 25px
     }
 
     div.swiper-button-next {
-        transform: translateX(40%);
+        transform: translateX(40%)
     }
 
     div.swiper-button-prev {
-        transform: translateX(-40%);
+        transform: translateX(-40%)
     }
 
-   
-    
-    .content h1 {
-        font-size: 24px;
+    .content h1,
+    .info-btn span {
+        font-size: 24px
     }
-    
+
     .content p {
         font-size: 16px;
-        padding: 0%;
-        margin: 0px 0px;
+        padding: 0;
+        margin: 0
     }
-    
 
     .info-btn p {
-        font-size: 22px;
-    }
-
-    .info-btn span {
-        font-size: 24px;
+        font-size: 22px
     }
 
     .countdown {
         gap: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 15px
     }
-    .time-block {
-        width:25%;
-      
-    }
-    
 
+    .time-block {
+        width: 25%
+    }
 
     .interval-time {
-        font-size: 7vw;
+        font-size: 7vw
     }
 
     #hours,
     #minutes,
     #seconds {
-        font-size: 15vw;
+        font-size: 15vw
     }
+
     .label {
-        font-size: 3vw;
+        font-size: 3vw
     }
-    
 
     .promo-two {
         text-align: center;
         font-size: 23px;
-        font-weight: 400;
+        font-weight: 400
     }
 
     span.animation {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 40px
     }
 
     span.promo-buy {
         font-weight: 700;
-        font-size: 60px;
+        font-size: 60px
     }
-
 }
