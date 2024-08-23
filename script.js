@@ -2,11 +2,11 @@
 const countdownDuration = 1800;
 startCountdown(countdownDuration);
 
-const swiper = new Swiper('.swiper', {
+let swiperCards = new Swiper('.card__content', {
 
     direction: 'horizontal',
     slidesPerView: 3,
-    spaceBetween: 0,
+    spaceBetween: 10,
     loop: true,
     autoplay: {
         delay: 5500,
@@ -33,10 +33,10 @@ const swiper = new Swiper('.swiper', {
         600: {
             slidesPerView: 1,
         },
-        1000: {
+        952: {
             slidesPerView: 2,
         },
-        1100: {
+        1215: {
             slidesPerView: 3,
         },
     },

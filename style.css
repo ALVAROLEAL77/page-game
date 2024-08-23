@@ -318,24 +318,22 @@ details[open]+.according-body {
     margin-bottom: 20px
 }
 
-.swiper-container {
-    width: 100%;
-    padding: 0;
-    height: 100%;
+.container{
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
-.swiper {
-    margin: 0 auto;
-    cursor: grab
+.card__container{
+    padding-block: 5rem;
 }
 
-.swiper-slide img {
-    width: 23rem;
+
+.card__image img{
+    width: 400px;
     height: 700px;
-    border-radius: 25px
+    border-radius: 1.25rem;
+  
 }
 
 div.swiper-button-next::after,
@@ -343,14 +341,6 @@ div.swiper-button-prev::after {
     font-size: 20px;
     font-weight: 700;
     color: #fff
-}
-
-div.swiper-button-next {
-    transform: translateX(60%)
-}
-
-div.swiper-button-prev {
-    transform: translateX(-60%)
 }
 
 
@@ -455,13 +445,6 @@ span.promo-buy {
     font-size: 70px
 }
 
-@media (max-width:1093px) {
-    .swiper-slide img {
-        width: 28rem;
-        height: 700px;
-        border-radius: 25px
-    }
-}
 
 @media (max-width:768px) {
     .logo img {
@@ -560,19 +543,6 @@ span.promo-buy {
         margin-bottom: 20px
     }
 
-    .swiper-slide img {
-        width: 18rem;
-        height: 700px;
-        border-radius: 25px
-    }
-
-    div.swiper-button-next {
-        transform: translateX(40%)
-    }
-
-    div.swiper-button-prev {
-        transform: translateX(-40%)
-    }
 
     .content h1,
     .info-btn span {
